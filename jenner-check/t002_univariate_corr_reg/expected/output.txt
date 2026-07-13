@@ -1,0 +1,148 @@
+                                                The UNIVARIATE Procedure
+                                                    Variable:  price
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                      113.900000    Sum Observations         2278.000000
+Std Deviation              71.604102    Variance                 5127.147368
+Skewness                    1.382549    Kurtosis                    1.272397
+Uncorrected SS         356880.000000    Corrected SS            97415.800000
+Coeff Variation            62.865761    Std Error Mean             16.011164
+
+           Basic Statistical Measures           
+
+Location              Variability               
+--------  ----------  -------------  -----------
+Mean      113.900000  Std Deviation    71.604102
+Median     88.500000  Variance       5127.147368
+Mode               .  Range           260.000000
+
+Quantiles (Definition 5)
+
+Quantile      Estimate
+----------  ----------
+0% Min       40.000000
+1%           40.000000
+5%           42.500000
+10%          50.000000
+25% Q1       63.500000
+50% Median   88.500000
+75% Q3      142.500000
+90%         230.000000
+95%         275.000000
+99%         300.000000
+100% Max    300.000000
+
+
+                                                The UNIVARIATE Procedure
+                                                  Variable:  log_price
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                        4.574573    Sum Observations           91.491469
+Std Deviation               0.566081    Variance                    0.320448
+Skewness                    0.471982    Kurtosis                   -0.561922
+Uncorrected SS            424.622956    Corrected SS                6.088515
+Coeff Variation            12.374518    Std Error Mean              0.126580
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      4.574573  Std Deviation  0.566081
+Median    4.482220  Variance       0.320448
+Mode             .  Range          2.014903
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min      3.688879
+1%          3.688879
+5%          3.747771
+10%         3.906998
+25% Q1      4.150761
+50% Median  4.482220
+75% Q3      4.957955
+90%         5.434284
+95%         5.612622
+99%         5.703782
+100% Max    5.703782
+
+                    The CORR Procedure
+          8 Variables:    log_price   bedrooms   bathrooms   accommodates   review_scores_rating_num   review_scores_cleanliness_num   has_wifi   room_entire_home
+                    Simple Statistics
+Variable         N      Mean   Std Dev       Sum   Minimum   Maximum
+--------  --------  --------  --------  --------  --------  --------
+log_price                            20   4.57457   0.56608  91.49147   3.68888   5.70378
+bedrooms                             20   1.80000   1.00525  36.00000   1.00000   4.00000
+bathrooms                            20   1.35000   0.58714  27.00000   1.00000   3.00000
+accommodates                         20   3.75000   1.91600  75.00000   1.00000   8.00000
+review_scores_rating_num             20   4.67000   0.22501  93.40000   4.20000   5.00000
+review_scores_cleanliness_num        19   4.73684   0.26079  90.00000   4.10000   5.00000
+has_wifi                             20   0.80000   0.41039  16.00000   0.00000   1.00000
+room_entire_home                     20   0.65000   0.48936  13.00000   0.00000   1.00000
+   Pearson Correlation Coefficients, N = 20
+          Prob > |r| under H0: Rho=0
+           log_price  bedrooms bathroomsaccommodatesreview_scores_rating_numreview_scores_cleanliness_num  has_wifiroom_entire_home
+--------  --------  --------  --------  --------  --------  --------  --------  --------
+log_price   1.00000   0.86752   0.88470   0.92450   0.02522  -0.09978   0.43092   0.74813
+              .       <.0001    <.0001    <.0001    0.9159    0.6844    0.0578    0.0001
+bedrooms   0.86752   1.00000   0.88280   0.95641   0.27456   0.12820   0.28067   0.59914
+            <.0001      .       <.0001    <.0001    0.2414    0.6010    0.2307    0.0052
+bathrooms   0.88470   0.88280   1.00000   0.87722   0.22309   0.06852   0.30580   0.44879
+            <.0001    <.0001      .       <.0001    0.3444    0.7805    0.1898    0.0472
+accommodates   0.92450   0.95641   0.87722   1.00000   0.15260   0.01602   0.40161   0.74377
+            <.0001    <.0001    <.0001      .       0.5207    0.9481    0.0792    0.0002
+review_scores_rating_num   0.02522   0.27456   0.22309   0.15260   1.00000   0.95676   0.15959  -0.24377
+            0.9159    0.2414    0.3444    0.5207      .       <.0001    0.5015    0.3003
+review_scores_cleanliness_num  -0.09978   0.12820   0.06852   0.01602   0.95676   1.00000   0.17667  -0.27600
+            0.6844    0.6010    0.7805    0.9481    <.0001      .       0.4694    0.2527
+has_wifi   0.43092   0.28067   0.30580   0.40161   0.15959   0.17667   1.00000   0.41931
+            0.0578    0.2307    0.1898    0.0792    0.5015    0.4694      .       0.0657
+room_entire_home   0.74813   0.59914   0.44879   0.74377  -0.24377  -0.27600   0.41931   1.00000
+            0.0001    0.0052    0.0472    0.0002    0.3003    0.2527    0.0657      .
+Multicollinearity Check using Variance Inflation Factor (VIF)
+
+                                                   The REG Procedure                                                    
+                                                     Model: MODEL1                                                      
+                                             Dependent Variable: log_price                                              
+
+Source                 DF  Sum of Squares  Mean Square   F Value    Pr > F
+---------------  --------  --------------  -----------  --------  --------
+Model                   7         5.77224      0.82461     34.06    <.0001
+Error                  11         0.26632      0.02421                    
+Corrected Total        18         6.03855                                 
+
+Root MSE           0.15560    R-Square            0.9559
+Dependent Mean       4.58604    Adj R-Sq            0.9278
+Coeff Var          3.39284
+
+                                                Parameter Estimates                                                 
+
+Variable                             DF  Estimate  Standard Error   t Value  Pr > |t|  Tolerance  Variance Inflation
+-----------------------------  --------  --------  --------------  --------  --------  ---------  ------------------
+Intercept                             1   4.62650         1.05238      4.40    0.0011          .                   .
+bedrooms                              1   0.03958         0.17320      0.23    0.8234    0.04356            22.95590
+bathrooms                             1   0.74599         0.17317      4.31    0.0012    0.12573             7.95331
+accommodates                          1  -0.05375         0.12351     -0.44    0.6718    0.02295            43.57330
+review_scores_rating_num              1  -0.97602         0.65988     -1.48    0.1672    0.06798            14.71056
+review_scores_cleanliness_num         1   0.67671         0.54877      1.23    0.2432    0.06567            15.22778
+has_wifi                              1   0.10740         0.11283      0.95    0.3616    0.60227             1.66038
+room_entire_home                      1   0.56404         0.18674      3.02    0.0116    0.15704             6.36765
+
+                                              Collinearity Diagnostics                                               
+
+  Number  Eigenvalue  Condition Index    Prop 1    Prop 2    Prop 3    Prop 4    Prop 5    Prop 6    Prop 7    Prop 8
+--------  ----------  ---------------  --------  --------  --------  --------  --------  --------  --------  --------
+       1     7.29385          1.00000    0.0000    0.0002    0.0003    0.0001    0.0000    0.0000    0.0021    0.0009
+       2     0.38760          4.33797    0.0004    0.0023    0.0004    0.0012    0.0001    0.0001    0.0025    0.0511
+       3     0.17688          6.42156    0.0000    0.0080    0.0148    0.0009    0.0000    0.0000    0.3795    0.0488
+       4     0.11922          7.82188    0.0007    0.0034    0.0174    0.0006    0.0000    0.0001    0.3590    0.1658
+       5     0.01803         20.11233    0.0002    0.1974    0.6049    0.0038    0.0000    0.0001    0.0261    0.0849
+       6     0.00339         46.35559    0.0007    0.6231    0.2568    0.9629    0.0000    0.0000    0.0786    0.4713
+       7     0.00095         87.57999    0.7657    0.1249    0.0870    0.0016    0.0120    0.0515    0.1483    0.1758
+       8     0.00008        304.28452    0.2323    0.0407    0.0183    0.0288    0.9879    0.9482    0.0038    0.0013
+

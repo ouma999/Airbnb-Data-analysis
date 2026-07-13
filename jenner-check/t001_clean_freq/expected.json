@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-13T09:08:54Z",
+  "_captured_run_id": "r_23bc3e63f7384ebeb007e8426343e2f4",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.listings_clean2 (20 rows, 18 columns).",
+    "NOTE: Output dataset means_out has 1 observations and 10 variables.",
+    "NOTE: PROC PRINT completed: 10 observations printed, 9 variables",
+    "NOTE: PROC FREQ statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-13T09:09:16Z",
+  "_captured_run_id": "r_dd18ef4431f74f2985b763a5b6492453",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.listings_final (20 rows, 22 columns).",
+    "NOTE: PROC CORR data=work.listings_final",
+    "NOTE: PROC REG: processed 1 job(s) in batch"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

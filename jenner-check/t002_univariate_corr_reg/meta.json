@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_univariate_corr_reg",
+  "source_file": "Antwerp use this.sas",
+  "source_blob_sha": "d81b644f2ab0f46bea4df63d00c7d6ff0a719c53",
+  "source_commit": "6de209fb9904a1d4308cd5cb00a26f8853ec17b5",
+  "notes": "Author's exploratory-modeling block (Steps 6-6b): PROC UNIVARIATE moments/quantiles on price and log_price, PROC CORR of log_price against the predictor set, and PROC REG with VIF/TOL/COLLIN for the multicollinearity check. Same inline Antwerp mock replaces the external CSV import; predictor list and options verbatim from the author's model statement."
+}
