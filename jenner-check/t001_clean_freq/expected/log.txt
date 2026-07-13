@@ -1,0 +1,65 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA work.listings_raw
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote work.listings_raw (20 rows, 16 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.listings_clean
+
+
+NOTE: Read 20 rows from work.listings_raw.
+NOTE: Wrote work.listings_clean (20 rows, 32 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.listings_clean2
+
+
+NOTE: Read 20 rows from work.listings_clean.
+NOTE: Wrote work.listings_clean2 (20 rows, 18 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: Output dataset means_out has 1 observations and 10 variables.
+NOTE: PROC MEANS statement used.
+NOTE: DATA work.listings_final
+
+
+NOTE: Read 20 rows from work.listings_clean2.
+NOTE: Wrote work.listings_final (20 rows, 28 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.listings_final
+
+
+NOTE: Read 20 rows from work.listings_final.
+NOTE: Wrote work.listings_final (20 rows, 28 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA work.listings_final
+
+
+NOTE: Read 20 rows from work.listings_final.
+NOTE: Wrote work.listings_final (20 rows, 29 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=work.listings_final
+
+NOTE: PROC PRINT completed: 10 observations printed, 9 variables
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_room_entire_home.spec.json
+NOTE: ODS plot written: freq_property_apartment.spec.json
+NOTE: ODS plot written: freq_property_house.spec.json
+NOTE: ODS plot written: freq_property_loft.spec.json
+NOTE: ODS plot written: freq_has_wifi.spec.json
+NOTE: ODS plot written: freq_neighbourhood_cleansed.spec.json
+NOTE: PROC FREQ statement used.

@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_clean_freq",
+  "source_file": "Antwerp use this.sas",
+  "source_blob_sha": "d81b644f2ab0f46bea4df63d00c7d6ff0a719c53",
+  "source_commit": "6de209fb9904a1d4308cd5cb00a26f8853ec17b5",
+  "notes": "Author's Airbnb preprocessing (Steps 2-7): price/bathrooms parsing, binary feature engineering, 'Unknown' fill for missing neighbourhood, mean imputation, outlier filter, log-price transform, then PROC FREQ over the categorical flags. PROC IMPORT of /home/u64133399/listings.csv replaced with an inline 20-row Antwerp mock so the bundle is self-contained; cleaning/analysis logic verbatim."
+}
